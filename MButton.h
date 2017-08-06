@@ -46,6 +46,8 @@ protected:
 public:
 	MButton(int inputPin);
 	void setThreshold(unsigned long newThreshold);
+	void setHoldThreshold(unsigned long newThreshold);
+	void setBounceThreshold(unsigned long newThreshold);
 	void setup();
 	void check();
 	boolean wasClicked();

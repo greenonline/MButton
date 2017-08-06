@@ -6,7 +6,7 @@ Written by Mark Fickett
 Modified by Julian Loiacono December '14
 */
 
-#include "mButton.h"
+#include "MButton.h"
 
 
 MButton::MButton(int inputPin)
@@ -16,6 +16,16 @@ MButton::MButton(int inputPin)
 void MButton::setThreshold(unsigned long newThreshold)
 {
 	holdThreshold = newThreshold;
+}
+
+void MButton::setHoldThreshold(unsigned long newThreshold)
+{
+	setThreshold(newThreshold);
+}
+
+void MButton::setBounceThreshold(unsigned long newThreshold)
+{
+	bounceThreshold = newThreshold;
 }
 
 void MButton::setup()
