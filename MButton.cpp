@@ -63,3 +63,19 @@ boolean MButton::wasHeld() {
 		return false;
 	}
 }
+
+// Getters
+        int MButton::getPin(){return pin;}
+        unsigned long MButton::getCloseTimeMillis(){return closeTimeMillis;}
+//        boolean MButton::getWasHeld(){return wasHeld;}
+        boolean MButton::getWasClosed(){return wasClosed;}
+        boolean MButton::getHeld(){return held;}
+        boolean MButton::getClicked(){return clicked;}  // Defers from wasClicked(), gives actual variable, no logic involved, differs from MButton.cpp version
+        unsigned long MButton::getHoldThreshold(){return holdThreshold;}
+        unsigned long MButton::getBounceThreshold(){return bounceThreshold;}
+// Setters
+        void MButton::setCloseTimeMillis(unsigned long value){closeTimeMillis = value;}
+//        void MButton::setWasHeld(boolean value){wasHeld = value;}
+        void MButton::setWasClosed(boolean value){wasClosed = value;}
+        void MButton::setHeld(boolean value){held = value;}
+        void MButton::setClicked(boolean value){clicked = value;}

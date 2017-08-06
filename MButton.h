@@ -26,6 +26,23 @@ private:
 	unsigned long closeTimeMillis;
 	const int pin;
 	boolean clicked, held; // At last check, was this button clicked (held)?
+protected:
+// Getters
+        int getPin();
+        unsigned long getCloseTimeMillis();
+//        boolean getWasHeld();
+        boolean getWasClosed();
+        boolean getHeld();
+        boolean getClicked();
+        unsigned long getHoldThreshold();
+        unsigned long getBounceThreshold();
+// Setters
+        void setCloseTimeMillis(unsigned long value);
+//        void setWasHeld(boolean value);
+        void setWasClosed(boolean value);
+        void setHeld(boolean value);
+        void setClicked(boolean value);
+
 public:
 	MButton(int inputPin);
 	void setThreshold(unsigned long newThreshold);
