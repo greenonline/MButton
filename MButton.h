@@ -13,7 +13,16 @@
  *  - wasClicked(): tapped briefly
  *  - wasHeld(): pressed for a longer period of time (and perhaps still closed)
  * The next call to check() will not report on that previous event.
+ *
+ *
+ * Put this file in your libraries folder along with MButton.cpp
+ *
+ *
+ * Written by Mark Fickett
+ * Modified by Julian Loiacono December '14
+ * Further Modification by Greenonline 2017
  */
+
 class MButton {
 private:
 	// Any button press >= HOLD_THRESHOLD milliseconds is considered a hold,

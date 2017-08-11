@@ -1,10 +1,19 @@
-/*
-
-Put this file in your libraries folder along with MButton.h
-
-Written by Mark Fickett
-Modified by Julian Loiacono December '14
-*/
+/**
+ * Encapsulate tracking pushes on a normally-open momentary button.
+ *
+ * After a call to check(), the button may report that it:
+ *  - wasClicked(): tapped briefly
+ *  - wasHeld(): pressed for a longer period of time (and perhaps still closed)
+ * The next call to check() will not report on that previous event.
+ *
+ *
+ * Put this file in your libraries folder along with MButton.h
+ *
+ *
+ * Written by Mark Fickett
+ * Modified by Julian Loiacono December '14
+ * Further Modification by Greenonline 2017
+ */
 
 #include "MButton.h"
 
